@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- username text input -->
+    <input type="text" placeholder="Enter Username" id="username">
+    <!-- password text input -->
+    <input type="password" placeholder="Enter Password" id="password">
+    <!-- submit btn -->
+    <button type="button" id="submit_btn">Log In</button>
+
+
+    <script>
+
+        // Array ng users
+        const USERS_DB = [
+            {
+                username: "123",
+                password: "123pass",
+                name: "User 123"
+            },
+            {
+                username: "abc",
+                password: "abcpass",
+                name: "User abc"
+            }
+        ]
+
+        // attach function login_handler to submit btn with the event click
+        document.getElementById("submit_btn").addEventListener("click", login_handler);
+
+
+        // login_handler
+        function login_handler() {
+            // get username and password value using getElementById
+            let username = document.getElementById("username").value
+            let password = document.getElementById("password").value
+
+            // user initailize as null
+            let user = null
+
+
+            // loop sa Array ng users
+            // check mo ibang loop https://www.freecodecamp.org/news/how-to-loop-through-an-array-in-javascript-js-iterate-tutorial/
+            for (const key in USERS_DB) {
+
+                let current_user = USERS_DB[key]
+
+                // check username and password the attach to variable user
+                if (current_user.password == password && current_user.username == username) {
+                    user = current_user
+                }
+
+            }
+
+            // condition if user is initialize meaning not null
+            if (user) {
+                alert(`Successfully Log in ${user.name}`);
+                window.location.replace("/home.html")
+            } else {
+                alert("Username and password is invalid.")
+            }
+
+        }
+    </script>
+</body>
+
+</html>
