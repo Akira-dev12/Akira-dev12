@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preference and Uploads</title>
-</head>
+<head><title>Preference and Uploads</title></head>
 <body>
-    <table width="700" align="center" bgcolor="#0e0b0b" border="0" cellspacing="0" cellpadding="20">
-        <tr>
-            <td colspan="8" align="center" bgcolor="#0e0b0b">
-                <img src="log.jpg" width="100" alt="description of image">
-            </td>
-        </tr>
+
+<table width="700" align="center" bgcolor="#0e0b0b" border="0" cellspacing="0" cellpadding="20">
+
+<tr>
+<td colspan="8" align="center" bgcolor="#0e0b0b">
+<img src="log.jpg" width="100" alt="description of image"></td>
+</tr>
+
 <tr>
     <br>
     <br>
     <br>
     <br>
     <br>
-</tr>        
-        <table width="700" align="center" cellspacing="0" cellpadding="20">  
-        <tr>
-             <table width="700" align="center" bgcolor="#0e0b0b" border="0" cellspacing="10" cellpadding="10">
-            <td width="20%" bgcolor="black" align="center"><font color="white"><a href="personal.html">Personal Information</a></font></td>
-            <td width="20%" bgcolor="black" align="center"  align="center"><font color="white"><a href="employment.html">Employment Details</a> </font></td>
-            <td width="20%" bgcolor="00001a" align="center"  align="center"><font color="white"><a href="preference.html">Preferences and Uploads</a></font></td>
-            <td width="20%" bgcolor="black" align="center"  align="center"><font color="white"><a href="review.html">Review and Submit</a></font></td>
+</tr>     
 
-        </nav>
-        </tr>
-        </table>    
+<table width="700" align="center" cellspacing="0" cellpadding="20">  
+
+<tr>
+<table width="700" align="center" bgcolor="#0e0b0b" border="0" cellspacing="10" cellpadding="10">
+<td width="20%" bgcolor="black" align="center"><font color="white"><a href="personal.html">Personal Information</a></font></td>
+<td width="20%" bgcolor="black" align="center"  align="center"><font color="white"><a href="employment.html">Employment Details</a> </font></td>
+<td width="20%" bgcolor="00001a" align="center"  align="center"><font color="white"><a href="preference.html">Preferences and Uploads</a></font></td>
+<td width="20%" bgcolor="black" align="center"  align="center"><font color="white"><a href="review.html">Review and Submit</a></font></td>
+</tr>
+</table>    
     
-    </table>
+</table>
 
 <table width="700" align="center" bgcolor="#0e0b0b" border="0" cellspacing="0" cellpadding="10">
+<form action="review.html">
 
-        <tr align="center">
-            <td>
-                <br>
-                <form action="review.html">
-                <label for="pwl"><font color="white">Preferred Work Location:</font></label> 
+<tr>
+<td align="right"><label for="pwl"><font color="white">Preferred Work Location:</font></label></td>
 
-                <input type="checkbox" name="location" id="clark">
-                <label for="clark"><font color="white">Clark</font></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input type="checkbox" name="location" id="metromanila">
-                <label for="metromanila"><font color="white">Metro Manila</font></label><br>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="location" id="remote">
-                <label for="remote"><font color="white">Remote</font></label><br><br>
+<td>
+<input type="checkbox" name="location" id="clark">
+<label for="clark"><font color="white">Clark</font></label>
+<br>                   
+<input type="checkbox" name="location" id="metromanila">
+<label for="metromanila"><font color="white">Metro Manila</font></label>
+<br>
+<input type="checkbox" name="location" id="remote">
+<label for="remote"><font color="white">Tarlac</font></label></td>
+</tr>
 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="department"><font color="white">Department:</font></label>&nbsp;
-                <select id="department" name="department">
-                    <option value="" selected disabled>Select</option>
-                    <option value="humanresource">Human Resource</option>
-                    <option value="it">Information Technology</option>
-                    <option value="finals">Finals</option>
-                </select><br><br>
+<tr>
+<td align="right">
+<label for="department"><font color="white">Department:</font></label>
+</td>
 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="file"><font color="white">Upload Resume:</font></label>
-                &nbsp;<input type="file" name="resume" id="file" required> <br><br>
+<td>
+<select id="department" name="department">
+<option value="" selected disabled>Select</option>
+<option value="humanresource">Human Resource</option>
+<option value="it">Information Technology</option>
+<option value="finals">Finals</option>
+</select></td>
+</tr>
+    
+<tr>
+<td align="right">
+<label for="file"><font color="white">Upload Resume:</font></label></td>
+            
+<td><input type="file" name="resume" id="file" required></td>
+</tr>
+    
+<tr>
+<td align="right">
+<label for="theme"><font color="white">Choose Profile Theme:</font></label></td>
 
-                <label for="theme"><font color="white">Choose Profile Theme:</font></label>
-                &nbsp;<input type="color" name="color" id="theme"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </td>
-        </tr>
+<td>
+<input type="color" name="color" id="theme">
+</td>
+</tr>
+    
+<tr align="right">
+<td colspan="2">
+<hr>
+<button type="submit">Next</button>
+</td>
+</tr>
 
-             <tr align="center">
-                <td>
-                <hr> <button type="submit">Next</button> 
-                </td>
-            </tr>
-        </form> 
-        </tr> 
-    </table>
+</form>
+</table>
 </body>
 </html>
